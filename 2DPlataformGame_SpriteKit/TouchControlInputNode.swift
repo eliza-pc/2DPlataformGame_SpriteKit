@@ -118,11 +118,11 @@ class TouchControlInputNode: SKSpriteNode{
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        <#code#>
+        
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        <#code#>
+        
     }
     
     func touchUp(touches: Set<UITouch>?, withEvent event: UIEvent?){

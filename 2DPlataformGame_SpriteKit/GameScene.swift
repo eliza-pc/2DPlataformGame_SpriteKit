@@ -21,8 +21,19 @@ class GameScene: SKScene {
 
         self.lastUpdateTime = 0
         
-        
+    }
     
+    override func didMove(to view: SKView) {
+        if let thePlayer = childNode(withName: "Player"){
+            
+            //pc = playerControlComponet
+            if let pcComponent = thePlayer.entity?.component(ofType: PlayerControlComponet.self){
+                
+                pcComponent.setupControls(camera: camera!, scen: self)
+                
+            }
+            
+        }
     }
     
     
